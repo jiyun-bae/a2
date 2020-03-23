@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Rock, Paper, Scissors!</title>
+		<link href="css/app.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+	<header>
+		<h1>Let's play Rock, Paper, Scissors!</h1>
+	</header>
+
+	<div class="scores-board">
+    <div id="user-label" class="badge">user</div>
+    <div id="comp-label" class="badge">comp</div>
+    <span id="user-lives">0</span>:<span id="comp-lives">0</span>
+  </div>
+
+
+	<div class='middle'>
+		<h3 class="other_headings" style="margin-top:20px;">PICK ONE</h3>
+            <div class="choices">
+                <div id="rock" class="choice">
+                    <img src="images/rock.jpg" alt="rock">
+                    <div class="container">
+                        <h4><b>ROCK</b></h4> 
+                    </div>
+                </div>
+                <div id="paper" class="choice">
+                    <img src="images/paper.jpg" alt="paper">
+                    <div class="container">
+                        <h4><b>PAPER</b></h4> 
+                    </div>
+                </div>
+                <div id="scissors" class="choice">
+                    <img src="images/scissors.jpg" alt="Scissors">
+                    <div class="container">
+                        <h4><b>SCISSORS</b></h4> 
+                    </div>
+                </div>                
+            </div>
+
+		<select id="gameOption" name="gameOption">
+			<option value="N/A">What will you play?</option>
+			<option value="rock">
+				Rock
+			</option>
+			<img src="images/rock" alt="rock">
+			<option value="paper">
+				Paper
+			</option>
+			<option value="scissors">
+				Scissors
+			</option>
+		</select>
+		<button id="playGame">Play!</button>
+		<div id="game_area"></div>
+ 
+		<script src="js/app.js"></script>
+
+	</body>
+</html>
